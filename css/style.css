@@ -398,7 +398,7 @@ footer > .container > #copyrights{
 @media only screen and (max-width:520px){
 	.container{
 		width:100%;
-		padding:0;
+		padding:0 10px 0 10px;
 		overflow:visible;
 	}
 
