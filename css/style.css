@@ -97,6 +97,9 @@ body{
 	border-bottom:1px solid rgba(0,0,0,0.9);
 }
 
+.navbar ul li .link:active{
+	color:purple;
+}
 
 /*Introduction Section*/
 #introduction{
