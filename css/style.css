@@ -228,19 +228,51 @@ body{
 
 
 /*portfolio Section*/
+
+/*
+next time notes - 
+1.change the layout when reaching width:1020px
+2.clomun layout also when reaching to mobile setting
+3.add "SHOW MORE" button at the bottom of section 
+*/
 #portfolio > .flex{
 	min-height:100vh;
-	flex-direction:column;
+}
+
+#portfolio > .container{
+	width:100%;
 }
 		
 .portfolio-box{
 	width:100%;
 	height:100%;
 	margin-top:60px;
-	background-color:var(--main-bgColor);
+	display:flex;
+	justify-content:center;
 }
 
-.portfolio-box  > .project-box{
+.project{
+	display:inline-block;
+	width:300px;
+	margin:0 10px;
+	box-shadow:0 5px 10px rgba(0,0,0,0.3);
+}
+
+.image-container{
+	width:300px;
+	height:250px;
+}
+
+.project-content{
+	padding:20px 15px;
+	background:#fff;
+}
+
+.project > .project-content >  a{
+	color:skyblue;
+	cursor:pointer;
+}
+/*.portfolio-box  > .project-box{
 	margin:10px auto;
 	background-color:#fff;
 	text-align:end;
@@ -263,7 +295,7 @@ body{
 .project-info a{
 	color:skyblue;
 	cursor:pointer;
-}
+}*/
 
 /*Footer & Contact Section*/
 footer{
