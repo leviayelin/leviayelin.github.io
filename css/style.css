@@ -48,6 +48,7 @@ body{
 /******Header******/
 #header{
 	width:100%;
+	margin:auto;
 	position:fixed;
 	background-color:var(--light-color);
 }
@@ -225,16 +226,8 @@ body{
 	width:80%;
 }
 
-
-
 /*portfolio Section*/
 
-/*
-next time notes - 
-1.change the layout when reaching width:1020px
-2.clomun layout also when reaching to mobile setting
-3.add "SHOW MORE" button at the bottom of section 
-*/
 #portfolio > .flex{
 	min-height:100vh;
 }
@@ -249,6 +242,7 @@ next time notes -
 	margin-top:60px;
 	display:flex;
 	justify-content:center;
+	flex-wrap:wrap;
 }
 
 .project{
@@ -357,7 +351,7 @@ footer > .container > #copyrights{
 /*Tablet screen*/
 @media only screen and (max-width:768px){
 	.container{
-		width:100%;
+		width:90%;
 		padding:0 20px;
 		overflow:visible;
 	}
