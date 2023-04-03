@@ -1,8 +1,6 @@
 
 /*notes:
 ****************************************
-1.try to understand the input properties. 
-2.pick a layout ( for now ).
 3.focus on the big screen ( your not yet in the media-query learning section).
 ****************************************
 */
@@ -183,7 +181,6 @@ body{
 
 #table-progress{
 	width:90%;
-	margin:auto 4px;
 	padding:20px;
 	border-radius:15px;
 	box-shadow:0 5px 10px rgba(0,0,0,0.3);
@@ -212,6 +209,7 @@ body{
 	padding-left:10px;
 	border-left:1px solid var(--dark-color);
 }
+
 .progress-box > .bar{
 	display:flex;
 	flex-direction:row;
@@ -230,25 +228,41 @@ body{
 
 #portfolio > .flex{
 	min-height:100vh;
+	flex-direction:column;
+	justify-content:space-around;
 }
 
 #portfolio > .container{
 	width:100%;
 }
+
+#portfolio > .container > .section-title{
+	margin-top:30px;
+}
+
+#portfolio > .container > .section-title > h1{
+	font-size:40px;
+}
 		
 .portfolio-box{
-	width:100%;
+/*	width:100%;
 	height:100%;
 	margin-top:60px;
 	display:flex;
 	justify-content:center;
-	flex-wrap:wrap;
+	flex-wrap:wrap;*/
+/*	margin:0 auto;*/
+  margin:50px 0 30px 0;
+   width:85%;
+	display:grid;
+	grid-template-columns:repeat(auto-fill, minmax(300px,300px));
+	grid-column-gap:10px;
+	grid-row-gap: 40px;
+	justify-content:center;
 }
 
 .project{
-	display:inline-block;
 	width:300px;
-	margin:0 10px;
 	box-shadow:0 5px 10px rgba(0,0,0,0.3);
 }
 
@@ -266,30 +280,6 @@ body{
 	color:skyblue;
 	cursor:pointer;
 }
-/*.portfolio-box  > .project-box{
-	margin:10px auto;
-	background-color:#fff;
-	text-align:end;
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-}
-
-.portfolio-box  > .project-box.card{
-	border-radius:5px;
-}
-.project-image{
-	width:200px;
-}
-
-.project-info{
-	width:300px;
-}
-
-.project-info a{
-	color:skyblue;
-	cursor:pointer;
-}*/
 
 /*Footer & Contact Section*/
 footer{
@@ -372,7 +362,7 @@ footer > .container > #copyrights{
 		outline:none;
 	}
 
-	.navbar{
+	.navbar,.close{
 	width:150px;
 	min-height:100vh;
 	margin-top:70px;

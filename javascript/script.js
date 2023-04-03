@@ -11,7 +11,11 @@ function navToggle(){
 
 //Event Listener Section
 for(let i = 0 ; i < hemburger.length; i++){
-// useing for loop that will able me to 
+// useing "for" loop that will able me to 
 //use the button as much as needed 	
 hemburger[i].addEventListener("click",navToggle);
 }
+
+
+
+

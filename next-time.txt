@@ -1,0 +1,12 @@
+----next time ---
+
+#html & css :
+
+* change the font-icons colors to white.
+*insert information to the the "project cards".
+
+#javascript :
+
+*navbar ("hamburger" ) when press 
+the chosen link or outside the showing menu
+close the menu.
