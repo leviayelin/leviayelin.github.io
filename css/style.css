@@ -5,11 +5,6 @@
 ****************************************
 */
 
-/*Inner custome font-family*/
-@font-face{
-	font-family:"Poppins";
-	src:url("../text-font/Poppins-Regular.ttf");
-}
 
 /*The Root Page*/
 :root{
@@ -26,6 +21,7 @@
 	padding:0;
 	color:rgba(0,0,0,0.8);
 	box-sizing:border-box;
+	font-family:poppins,arial,sans-serif;
 }
 
 html,body{

@@ -2,6 +2,7 @@
 //creating variable for show and hide button
 const hemburger = document.querySelectorAll(".hamburger");
 const showNavbar = document.querySelector(".navbar");
+const Header = document.getElementById('header');
 
 //Functions Section
 function navToggle(){
@@ -17,5 +18,12 @@ hemburger[i].addEventListener("click",navToggle);
 }
 
 
-
-
+window.addEventListener('scroll', function(){
+	const scrollDown = Header;
+	const windowPosition = window.scrollY > 100;
+	if(windowPosition){
+		scrollDown.style.boxShadow = "0 3px 5px rgba(0,0,0,0.3)"
+	}else{
+		scrollDown.style.boxShadow = "none";
+	}
+})
