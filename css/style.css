@@ -376,7 +376,7 @@ footer > .container > #copyrights{
 
 
 	.show{
-	width:150px;
+	width:100%;
 	min-height:100vh;
 	margin-top:70px;
 	background-color:var(--main-bgColor);
