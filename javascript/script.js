@@ -3,12 +3,22 @@
 const hemburger = document.querySelectorAll(".hamburger");
 const showNavbar = document.querySelector(".navbar");
 const Header = document.getElementById('header');
+const links = document.querySelectorAll('ul .link');
+
 
 //Functions Section
 function navToggle(){
 //toggle between the navbar hide and show	
 	showNavbar.classList.toggle("show");
 }
+
+links.forEach(items => {
+	items.addEventListener('click', function(link){
+	if(link.target){
+		showNavbar.classList.remove('show')
+	}
+})
+})
 
 //Event Listener Section
 for(let i = 0 ; i < hemburger.length; i++){
