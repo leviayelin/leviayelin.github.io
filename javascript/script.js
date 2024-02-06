@@ -37,3 +37,9 @@ window.addEventListener('scroll', function(){
 		scrollDown.style.boxShadow = "none";
 	}
 })
+
+//fetching data from data base
+let url = "../database/projects.json";
+fetch(url)
+.then(resp => resp.json())
+.then(data => console.log(data.project))
