@@ -4,6 +4,13 @@ const hemburger = document.querySelectorAll(".hamburger");
 const showNavbar = document.querySelector(".navbar");
 const Header = document.getElementById('header');
 const links = document.querySelectorAll('ul .link');
+const projectDemo = document.querySelector('#project-demo');
+
+
+//hiding demo project card - function 
+function hideLoading(){
+	projectDemo.classList.add("hide");
+}
 
 
 //Functions Section
@@ -40,6 +47,39 @@ window.addEventListener('scroll', function(){
 
 //fetching data from data base
 let url = "../database/projects.json";
-fetch(url)
-.then(resp => resp.json())
-.then(data => console.log(data.project))
+
+fetch(url,{
+	method:'GET',
+	type:'cors',
+	status:200,
+})
+.then(resp => {
+	if(!resp.ok){
+		throw new Error('an error accure!')
+	}
+	console.log(resp)
+	return resp.json()
+})
+.then(data => {
+		hideLoading();	
+		let card = data.project;
+		console.log(card)
+		console.log(data)
+		card.forEach((item,id) =>{
+			item = `
+				<div class="project">
+					<div class="image-container">
+						<img src="${item.image}">
+					</div>
+					<div class="project-content">
+						<h2 class="project-title">${item.title}</h2>
+						<p class="content">${item.content}</p>
+						<a href="#">show project</a>
+					</div>
+				</div>
+		`
+		document.querySelector('.projects-container').innerHTML += item;
+		})
+  }).catch(err => console.log(err))
+
+// fetchProjects();
