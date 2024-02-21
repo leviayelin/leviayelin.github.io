@@ -16,7 +16,7 @@
 }
 
 
-*,*::before,*::after{
+*{
 	margin:0;
 	padding:0;
 	color:rgba(0,0,0,0.8);
@@ -361,11 +361,14 @@ footer > .flex > .contact{
 	cursor:pointer;
 } 
 
+.fa-brands{
+	color:white;
+}
+
 footer > .container > #copyrights{
 	padding-top:100px;
 	color:var(--light-color);
 }
-
 
 /*Media Query Section*/
 /*Tablet screen*/
