@@ -33,6 +33,9 @@ _______________
 	border-radius:25px;
 }
 
+.box{
+	max-width:500px;
+}
 
 /*font style & design*/
 ul{
