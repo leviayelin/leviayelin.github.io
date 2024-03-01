@@ -1,16 +1,9 @@
---------------------------------				
-project card tamplate
 --------------------------------
+projects nontes
+--------------------------------			
 
-				<div class="project">
-					<div class="image-container">
-					</div>
-					<div class="project-content">
-						<h2 class="project-title">project title</h2>
-						<p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="#">show project</a>
-					</div>
-				</div>
+* UI/UX -
 
-************************************************************************
+creating a new structor for better user expiriance,
+more over this will make the understanding of placing 
+each components logicly and make the work-flow easy.
